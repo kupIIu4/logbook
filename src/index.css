@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: local('ProximaNova'), url(./fonts/ProximaNova-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: ProximaNova, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  background-color: #E5E5E5;
+}
+
+h1, h2, h3, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+

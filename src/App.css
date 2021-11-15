@@ -1,0 +1,20 @@
+
+.wrapper__inner {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 24px 20px 0 20px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #15526A;
+    text-transform: uppercase;
+    margin: 0 0 35px 0;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,14 @@
+.footer {
+    background-color: #F7FAFB;
+    margin: 0 20px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer__left-text, .footer__right-text {
+    margin: 0;
+}
