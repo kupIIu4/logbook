@@ -1,7 +1,10 @@
 .breadcrumbs {
-    margin-bottom: 10px;
+    padding: 10px 20px;
 }
+
+
 .breadcrumbs__list-link {
+    position: relative;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;

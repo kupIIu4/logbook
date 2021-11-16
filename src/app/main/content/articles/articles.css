@@ -1,0 +1,33 @@
+.articles {
+}
+
+.article__wrapper {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding: 20px 20px;
+    border-top: 2px solid #F7FAFB;
+    border-borrom: 2px solid #F7FAFB;
+}
+.article__wrapper--active {
+    background: #F3FCFF;
+}
+
+.articles__header {
+    margin-bottom: 21px;
+}
+
+.articles__title {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+
+.article__title {
+
+}
+
+.article__text {
+
+}

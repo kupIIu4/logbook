@@ -2,8 +2,6 @@ import React from "react";
 
 import './menu.css';
 
-import iconNotification from "../../../img/icon_notification.png";
-
 const Menu = () => (
     <div className='menu'>
         <ul className='menu__list'>
@@ -11,8 +9,8 @@ const Menu = () => (
                 <a className="menu__list-link" href="#">100.00 <span>₽</span></a>
             </li>
             <li className='menu__list-item'>
-                <a className="menu__list-notification">
-                    <img className='menu__list-img' src={iconNotification}/>
+                <a href="" className="menu__list-link">
+                    <span className='menu__list-img' data-count={1}></span>
                 </a>
                 <a className="menu__list-link" href="#">vikavishny</a>
             </li>

@@ -1,7 +1,7 @@
 import './App.css';
-import Sidebar from "./component/sidebar/sidebar";
-import Main from "./component/main/main";
-import Footer from "./component/footer/footer";
+import Sidebar from "./app/sidebar/sidebar";
+import Main from "./app/main/main";
+import Footer from "./app/footer/footer";
 import React from "react";
 
 function App() {

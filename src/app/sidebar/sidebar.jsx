@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 
-import imgLogo from '../../img/logo.png';
-import iconUser from '../../img/icon_user.png';
-import iconGroup from '../../img/icon_group.png';
-import iconDomens from '../../img/icon_domens.png';
-import iconHelp from '../../img/icon_help.png';
+import imgLogo from '../../assets/img/logo.png';
+import iconUser from '../../assets/img/icon_user.png';
+import iconGroup from '../../assets/img/icon_group.png';
+import iconDomens from '../../assets/img/icon_domens.png';
+import iconHelp from '../../assets/img/icon_help.png';
 
 import './sidebar.css'
 
@@ -14,7 +14,7 @@ const Sidebar = ({title}) => (
     <section className='sidebar'>
         <div className='sidebar__container'>
             <div className="logo">
-                <a className="logo_link" href="" >
+                <a className="logo_link" href="/" >
                     <img className='logo__img' src={imgLogo} alt='Logo image' />
                 </a>
             </div>
@@ -22,25 +22,25 @@ const Sidebar = ({title}) => (
                 <ul className='main-menu__list'>
                     <li className='main-menu__list-item'>
                         <img className='main-menu__icon' src={iconUser}/>
-                        <a className="main-menu__link" href="#" >
+                        <a className="main-menu__link" href="/" alt="">
                             Аккаунт
                         </a>
                     </li>
                     <li className='main-menu__list-item'>
                         <img className='main-menu__icon' src={iconGroup}/>
-                        <a className="main-menu__link" href="#" >
+                        <a className="main-menu__link" href="/" alt="">
                             VPS
                         </a>
                     </li>
                     <li className='main-menu__list-item'>
                         <img className='main-menu__icon' src={iconDomens}/>
-                        <a className="main-menu__link" href="#" >
+                        <a className="main-menu__link" href="/" alt="">
                             Домены
                         </a>
                     </li>
                     <li className='main-menu__list-item main-menu__list-item--active'>
                         <img className='main-menu__icon' src={iconHelp}/>
-                        <a className="main-menu__link" href="#" >
+                        <a className="main-menu__link" href="/" alt="">
                             Бортовой журнал
                         </a>
                     </li>

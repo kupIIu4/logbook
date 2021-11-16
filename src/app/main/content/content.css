@@ -1,6 +1,5 @@
 .content {
     background-color: #fff;
-    padding: 16px 20px;
 }
 .content__title {
     font-weight: bold;
@@ -9,4 +8,5 @@
     text-transform: uppercase;
     color: #062436;
     margin-bottom: 16px;
+    padding: 0 20px
 }
