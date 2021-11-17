@@ -10,7 +10,7 @@ const Menu = () => (
             </li>
             <li className='menu__list-item'>
                 <a href="" className="menu__list-link">
-                    <span className='menu__list-img' data-count={1}></span>
+                    <span className='menu__list-icon' data-count={1}></span>
                 </a>
                 <a className="menu__list-link" href="#">vikavishny</a>
             </li>
@@ -18,7 +18,6 @@ const Menu = () => (
                 <a className="menu__list-link" href="#">Выйти</a>
             </li>
         </ul>
-
     </div>
 )
 

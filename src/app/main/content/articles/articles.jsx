@@ -1,36 +1,34 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 import {getArticlesXml} from "../../../../service/axiosXml";
 import Article from "./article";
+import Preloader from "../../../preload/preloader";
 
 import './articles.css'
 
-const testfd = () => {
-    const articles = getArticlesXml()
-    console.log(articles)
-    return articles
-}
+const Articles = () => {
+    const [articles, setArticles] = useState('');
 
-const Articles =  () => {
-    // const articles = await getArticlesXml()
-    const articles = testfd()
-    setTimeout(
-        () => console.log('setTimeout',articles),
-        3000
-    );
-    console.log(articles.response);
 
-    console.log(articles)
+    useEffect(() => {
+        async function fetchData() {
+            const articlesList = await getArticlesXml();
+            setArticles(articlesList);
+        }
+
+        fetchData();
+    }, []);
+
     return (
         <div className='articles'>
-            {<Article  />}
-            {<Article  />}
-            {<Article  />}
-            {<Article  />}
-            {<Article  />}
-            {<Article  />}
+            {articles.length
+                ? articles.map(article => <Article articles={article}/>)
+                : <Preloader text='Пожалуйста подождите, загрузка ...' className='preloader articles__preloader'/>
+            }
         </div>
     )
+
+    // }
     // for (const articlesKey in articles) {
     //     console.log('articlesKey', articlesKey)
     //     console.log('articles', articles)
@@ -42,7 +40,6 @@ const Articles =  () => {
     //         </div>
     //     )
     // })
-
 }
 
 export default Articles;

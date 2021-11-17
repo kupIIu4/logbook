@@ -1,6 +1,8 @@
 .footer {
     background-color: #F7FAFB;
-    margin: 0 20px;
+    font-size: 12px;
+    line-height: 15px;
+
 }
 
 .footer__container {
@@ -11,4 +13,8 @@
 
 .footer__left-text, .footer__right-text {
     margin: 0;
+}
+
+.footer__left-link, .footer__right-link {
+    color: #3DBDF6;
 }

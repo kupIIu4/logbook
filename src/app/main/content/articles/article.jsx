@@ -1,20 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 
-const Article = ({article}) => (
-    // <div className="article__wrapper article__wrapper--active">
-    <div className="article__wrapper">
-        <div className="article__header">
-            <span className="article__title">
-                {/*{article.title}*/}
-                Почтовый сервер на VPS: топ лучших программ
-            </span>
-            <div className="article__decor"></div>
+const Article = ({articles}) => {
+    const [showBlock, setShowBlock] = useState(false);
+
+
+    return (
+        <div
+            key={articles.id}
+            className={showBlock ? 'article__wrapper article__wrapper--active' : 'article__wrapper'}
+            onClick={() => setShowBlock(!showBlock)}
+        >
+            <div className={showBlock ? "article__header up" : "article__header down"}>
+            {/*<div className="article__header">*/}
+                <span className="article__title">
+                    {articles.title}
+                </span>
+            </div>
+            <div className={showBlock ? 'article__text article__text--active' : 'article__text'}>
+                {articles.content}
+            </div>
         </div>
-        <div className="article__text">
-            {/*{article.content}*/}
-            очтовый сервер на VPS: топ лучших про…cebook, vkontakte, odnoklassniki, twitter Почтовый сервер на VPS: топ лучших программ
-        </div>
-    </div>
-)
+    )
+}
 
 export default Article;

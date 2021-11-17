@@ -16,6 +16,14 @@ li {
     margin-bottom: 45px;
     padding: 24px 0 0 20px;
 }
+.main-menu {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 
 .main-menu__list {
 }
@@ -35,11 +43,12 @@ li {
 .main-menu__list-item {
     display: flex;
     align-items: center;
-    padding: 14px 20px;
+    padding: 14px 0 14px 20px;
 }
 
 .main-menu__list-item--active {
     border-left: 6px solid #3DBDF6;
     background-color: #15526A;
-    padding-left: 14px;
+    margin-top: 8px;
+    padding: 10px 0 10px 13px;
 }

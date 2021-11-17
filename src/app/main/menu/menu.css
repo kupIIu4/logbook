@@ -27,21 +27,20 @@
     padding: 0 20px;
 }
 
-.menu__list-img{
+.menu__list-icon{
     position: relative;
     margin-right: 27px;
 }
 
-.menu__list-img:before {
+.menu__list-icon:before {
     position: absolute;
     content: '';
-    background: url("../../../../src/assets/img/bell.svg") 0 0/cover no-repeat;
+    background: url("../../../assets/icon/bell.svg") 0 0/cover no-repeat;
     width: 15px;
     height: 17px;
     z-index: 998;
 }
-
-.menu__list-img:after {
+.menu__list-icon:after {
     content: attr(data-count);
     position: absolute;
     display: flex;

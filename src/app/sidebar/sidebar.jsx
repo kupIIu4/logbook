@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 
-import imgLogo from '../../assets/img/logo.png';
-import iconUser from '../../assets/img/icon_user.png';
-import iconGroup from '../../assets/img/icon_group.png';
-import iconDomens from '../../assets/img/icon_domens.png';
-import iconHelp from '../../assets/img/icon_help.png';
+import imgLogo from '../../assets/icon/logo.svg';
+import iconUser from '../../assets/icon/icon_user.svg';
+import iconGroup from '../../assets/icon/icon_group.svg';
+import iconDomens from '../../assets/icon/icon_domens.svg';
+import iconHelp from '../../assets/icon/icon_help.svg';
 
 import './sidebar.css'
 
