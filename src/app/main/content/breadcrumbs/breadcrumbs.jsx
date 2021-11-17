@@ -6,7 +6,7 @@ const Breadcrumbs = () => (
     <div className='breadcrumbs'>
         <ul className="breadcrumbs__list">
             <li className="breadcrumbs__list-item">
-                <a href="" className="breadcrumbs__list-link">
+                <a href="#" className="breadcrumbs__list-link">
                     Бортовой журнал
                 </a>
             </li>

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-import {getArticlesXml} from "../../../../service/axiosXml";
+import {getArticlesXml} from "../../../services/axiosXml";
 import Article from "./article";
 import Preloader from "../../../preloader/preloader";
 
@@ -10,12 +10,7 @@ const Articles = () => {
     const [articles, setArticles] = useState('');
 
     useEffect(() => {
-        async function fetchData() {
-            const articlesList = await getArticlesXml();
-            setArticles(articlesList);
-        }
-
-        fetchData();
+        getArticlesXml().then( (articles) => setArticles(articles));
     }, []);
 
     return (

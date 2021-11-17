@@ -36,21 +36,18 @@ li {
     align-items: center;
     padding: 16px 0 16px 20px;
 }
-
+.icon {
+    padding-left: 57px;
+}
 .main-menu__list-item--active {
     border-left: 6px solid #3DBDF6;
     background-color: #15526A;
     margin-top: 8px;
-    padding: 10px 0 10px 13px;
+    padding: 11px 0 11px 51px;
+    box-sizing: border-box;
 }
 
-.main-menu__icon {
-    margin-right: 16px;
-}
 
-.icon {
-    padding-left: 57px;
-}
 
 .icon__user:before {
     content: '';
@@ -86,7 +83,7 @@ li {
     content: '';
     position: absolute;
     background: url("../../assets/icon/icon_help.svg") 0 0/cover no-repeat;
-    left: 20px;
+    left: 14px;
     width: 21px;
     height: 21px;
     z-index: 998;

@@ -16,28 +16,16 @@ const Sidebar = () => (
             <nav className="main-menu">
                 <ul className='main-menu__list'>
                     <li className='main-menu__list-item icon icon__user'>
-                        {/*<img className='main-menu__icon' src={iconUser}/>*/}
-                        <a className="main-menu__link" href="/" alt="">
-                            Аккаунт
-                        </a>
+                        <a className="main-menu__link" href="/" alt="">Аккаунт</a>
                     </li>
                     <li className='main-menu__list-item icon icon__group'>
-                        {/*<img className='main-menu__icon' src={iconGroup}/>*/}
-                        <a className="main-menu__link" href="/" alt="">
-                            VPS
-                        </a>
+                        <a className="main-menu__link" href="/" alt="">VPS</a>
                     </li>
                     <li className='main-menu__list-item icon icon__domens'>
-                        {/*<img className='main-menu__icon' src={iconDomens}/>*/}
-                        <a className="main-menu__link" href="/" alt="">
-                            Домены
-                        </a>
+                        <a className="main-menu__link" href="/" alt="">Домены</a>
                     </li>
                     <li className='main-menu__list-item main-menu__list-item--active icon icon__help'>
-                        {/*<img className='main-menu__icon' src={iconHelp}/>*/}
-                        <a className="main-menu__link" href="/" alt="">
-                            Бортовой журнал
-                        </a>
+                        <a className="main-menu__link" href="/" alt="">Бортовой журнал </a>
                     </li>
                 </ul>
             </nav>
