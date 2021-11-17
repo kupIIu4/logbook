@@ -7,5 +7,4 @@ const Preloader = ({text, className}) => (
 )
 
 
-
 export default Preloader;

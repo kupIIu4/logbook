@@ -2,13 +2,12 @@ import React, {useEffect, useState} from "react";
 
 import {getArticlesXml} from "../../../../service/axiosXml";
 import Article from "./article";
-import Preloader from "../../../preload/preloader";
+import Preloader from "../../../preloader/preloader";
 
 import './articles.css'
 
 const Articles = () => {
     const [articles, setArticles] = useState('');
-
 
     useEffect(() => {
         async function fetchData() {
@@ -27,19 +26,6 @@ const Articles = () => {
             }
         </div>
     )
-
-    // }
-    // for (const articlesKey in articles) {
-    //     console.log('articlesKey', articlesKey)
-    //     console.log('articles', articles)
-    // }
-    // articles.map(item => {
-    //     return (
-    //         <div className='articles'>
-    //             {<Article article={item} />}
-    //         </div>
-    //     )
-    // })
 }
 
 export default Articles;

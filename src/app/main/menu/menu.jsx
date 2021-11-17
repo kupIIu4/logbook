@@ -2,6 +2,7 @@ import React from "react";
 
 import './menu.css';
 
+
 const Menu = () => (
     <div className='menu'>
         <ul className='menu__list'>

@@ -8,12 +8,12 @@ const Footer = () => (
             <div className="footer__left">
                 <p className="footer__left-text">
                     © 2001– 2018 ООО&nbsp;
-                     <a className="footer__left-link" href="#">«СпейсВэб» </a>
+                    <a className="footer__left-link" href="#">«СпейсВэб» </a>
                 </p>
                 <p className="footer__left-text">Все права защищены.</p>
                 <p className="footer__left-text">
                     Лицензия&nbsp;
-                    <a className="footer__left-link" href="">№163230</a>
+                    <a className="footer__left-link" href="#">№163230</a>
                 </p>
             </div>
             <div className="footer__right">

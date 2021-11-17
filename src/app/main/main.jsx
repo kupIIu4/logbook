@@ -1,6 +1,4 @@
-import React, {useEffect, useState} from "react";
-import PropTypes from 'prop-types';
-import axios from "axios";
+import React from "react";
 
 import Menu from "./menu/menu";
 import Content from "./content/content";
@@ -13,18 +11,10 @@ const Main = () => {
         <section className='main'>
             <div className='main__container'>
                 <Menu/>
-                <Content />
+                <Content/>
             </div>
         </section>
     )
-}
-
-Main.propTypes = {
-    title: PropTypes.string,
-}
-
-Main.defaultProp = {
-    title: 'List Task',
 }
 
 export default Main;

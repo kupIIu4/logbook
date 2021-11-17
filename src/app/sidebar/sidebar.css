@@ -4,9 +4,6 @@
     color: #fff;
 }
 
-.sidebar__container {
-}
-
 li {
     list-style-type: none;
     padding: 0;
@@ -16,20 +13,13 @@ li {
     margin-bottom: 45px;
     padding: 24px 0 0 20px;
 }
+
 .main-menu {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
     color: #FFFFFF;
-}
-
-
-.main-menu__list {
-}
-
-.main-menu__icon {
-    margin-right: 16px;
 }
 
 .main-menu__link {
@@ -42,8 +32,9 @@ li {
 
 .main-menu__list-item {
     display: flex;
+    position: relative;
     align-items: center;
-    padding: 14px 0 14px 20px;
+    padding: 16px 0 16px 20px;
 }
 
 .main-menu__list-item--active {
@@ -51,4 +42,52 @@ li {
     background-color: #15526A;
     margin-top: 8px;
     padding: 10px 0 10px 13px;
+}
+
+.main-menu__icon {
+    margin-right: 16px;
+}
+
+.icon {
+    padding-left: 57px;
+}
+
+.icon__user:before {
+    content: '';
+    position: absolute;
+    background: url("../../assets/icon/icon_user.svg") 0 0/cover no-repeat;
+    left: 20px;
+    width: 21px;
+    height: 21px;
+    z-index: 998;
+}
+
+.icon__group:before {
+    content: '';
+    position: absolute;
+    background: url("../../assets/icon/icon_group.svg") 0 0/cover no-repeat;
+    left: 20px;
+    width: 21px;
+    height: 21px;
+    z-index: 998;
+}
+
+.icon__domens:before {
+    content: '';
+    position: absolute;
+    background: url("../../assets/icon/icon_domens.svg") 0 0/cover no-repeat;
+    left: 20px;
+    width: 22px;
+    height: 21px;
+    z-index: 998;
+}
+
+.icon__help:before {
+    content: '';
+    position: absolute;
+    background: url("../../assets/icon/icon_help.svg") 0 0/cover no-repeat;
+    left: 20px;
+    width: 21px;
+    height: 21px;
+    z-index: 998;
 }

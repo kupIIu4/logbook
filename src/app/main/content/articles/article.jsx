@@ -3,7 +3,6 @@ import React, {useState} from "react";
 const Article = ({articles}) => {
     const [showBlock, setShowBlock] = useState(false);
 
-
     return (
         <div
             key={articles.id}
@@ -11,7 +10,6 @@ const Article = ({articles}) => {
             onClick={() => setShowBlock(!showBlock)}
         >
             <div className={showBlock ? "article__header up" : "article__header down"}>
-            {/*<div className="article__header">*/}
                 <span className="article__title">
                     {articles.title}
                 </span>

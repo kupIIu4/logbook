@@ -33,6 +33,7 @@
     height: 10px;
     z-index: 998;
 }
+
 .up:after {
     content: '';
     background: url("../../../../assets/icon/arrow_down.svg") 0 0/cover no-repeat;
